@@ -4,7 +4,7 @@ from PyPDF2 import PdfReader
 from langchain.text_splitter import CharacterTextSplitter
 from langchain.embeddings import OpenAIEmbeddings
 from langchain.vectorstores import FAISS
-
+from langchain.memory import ConversationBufferMemory
 
 def get_pdf_text(pdf_docs):
     text = ""
